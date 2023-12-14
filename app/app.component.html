@@ -1,0 +1,39 @@
+
+<a href="#" class="scrolltop" id="scroll-top">
+  <i class='bx bx-chevron-up scrolltop__icon'></i>
+</a>
+<header class="l-header" id="header">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid bd-container">
+    <a class="navbar-brand" style="margin-right: 400px;" [routerLink]="['/']">Tasty</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav__menu" id="navbarSupportedContent nav-menu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__list">
+        <li class="nav-item">
+          <a class="nav__link active-link" aria-current="page" [routerLink]="['']">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" [routerLink]="['about']">about</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" [routerLink]="['service']">service</a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link " [routerLink]="['menu']">menu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link " [routerLink]="['contact']">contact us</a>
+        </li>
+        
+        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+</header>
+
+<router-outlet></router-outlet>
